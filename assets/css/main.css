@@ -1,0 +1,188 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.color-primary {
+  color: #00FFFF;
+}
+
+body * {
+  color: #fcfcfd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  font-family: "Inter" !important;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+bdi {
+  display: inline-block;
+}
+
+.absulute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ct-inner-content {
+  overflow: hidden;
+}
+
+ul {
+  list-style: unset;
+}
+
+.ct-section-inner-wrap {
+  width: 100%;
+  height: auto;
+}
+
+.ct-section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+h2.ct-headline {
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+h1.ct-headline {
+  font-size: clamp(2rem, 3vw, 4rem);
+  margin-bottom: 5rem;
+}
+
+.ct-text-block {
+  font-size: clamp(12px, 3vw, 1rem);
+}
+
+a {
+  color: #00FFFF;
+}
+
+p a {
+  color: #00FFFF;
+}
+
+.attribute {
+  width: 100%;
+}
+
+.attribute > .ct-div-block + .ct-div-block {
+  margin-top: 1.5rem;
+}
+
+.steps > div + div {
+  margin-top: 3rem;
+}
+
+@media (max-width: 991px) {
+  .ct-new-columns > .ct-div-block {
+    padding: 0;
+  }
+  .ct-section-inner-wrap {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+}
+
+.introduction .ct-text-block + .ct-text-block {
+  margin-top: 3rem;
+}
+
+@font-face {
+  font-family: "Galactus";
+  font-weight: 500;
+  src: url("/modules/huntgem/assets/fonts/Galactus/Galactus-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galactus";
+  font-weight: 700;
+  src: url("/modules/huntgem/assets/fonts/Galactus/Galactus-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("/modules/huntgem/assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/modules/huntgem/assets/fonts/Inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("/modules/huntgem/assets/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("/modules/huntgem/assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  src: url("/modules/huntgem/assets/fonts/Inter/Inter-ExtraBold.ttf") format("truetype");
+}
+/*# sourceMappingURL=main.css.map */

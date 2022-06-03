@@ -1,0 +1,124 @@
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.color-primary {
+    color: $primary;
+}
+
+body * {
+    color: $neutrals-8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+    font-family: $Inter !important;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+bdi {
+    display: inline-block;
+}
+
+.absulute-center {
+    @include absolute-middle;
+}
+
+//
+.ct-inner-content {
+    overflow: hidden;
+}
+
+ul {
+    list-style: unset;
+}
+.ct-section-inner-wrap {
+    width: 100%;
+    height: auto;
+}
+.ct-section {
+    @include grid-center($content: false, $items: true);
+}
+
+h2.ct-headline {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+h1.ct-headline {
+    font-size: clamp(2rem, 3vw, 4rem);
+    margin-bottom: 5rem;
+}
+
+.ct-text-block {
+    font-size: clamp(12px, 3vw, 1rem);
+}
+
+a {
+    color: $primary;
+}
+p a {
+    color: $primary;
+}
+
+.attribute {
+    width: 100%;
+    > .ct-div-block + .ct-div-block {
+        margin-top: 1.5rem;
+    }
+}
+.steps {
+    > div + div {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .ct-new-columns > .ct-div-block {
+        padding: 0;
+    }
+    .ct-section-inner-wrap {
+        padding-bottom: 48px;
+        padding-top: 48px;
+    }
+}
